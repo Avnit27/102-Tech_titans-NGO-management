@@ -1,0 +1,115 @@
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 32px;
+  color: transparent;
+  background-image: linear-gradient(120deg, #270993, #2196f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-line {
+  border: none;
+  height: 1px;
+  background-color: #000;
+}
+
+.user-operations {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user-operations button {
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.user-operations button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* User Table */
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#userTable th,
+#userTable td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+#userTable th {
+  background-color: #f2f2f2;
+}
+
+/* Edit and Deactivate Buttons */
+.edit-button,
+.deactivate-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 3px;
+}
+
+.edit-button:hover,
+.deactivate-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Add User Panel */
+#addUserPanel,
+#editUserPanel {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#addUserPanel h3,
+#editUserPanel h3 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: transparent;
+  background-image: linear-gradient(120deg, #4caf50, #2196f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none; /* Use the hidden class to hide the panels */
+}
+
+#addUserPanel.show,
+#editUserPanel.show {
+  display: block; /* Show the panel when the show class is added */
+}

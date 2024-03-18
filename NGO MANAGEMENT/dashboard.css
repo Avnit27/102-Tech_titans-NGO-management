@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  justify-content: start;
+  padding: 20px;
+}
+
+.profile {
+  padding: 20px;
+  background-color: rgb(212, 212, 212);
+  box-shadow: var(--box-shadow);
+  width: 400px;
+  border-radius: 5px;
+}
+
+.profile img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  margin-left: 90px;
+}
+
+.profile h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: var(--black);
+  margin-left: 110px;
+}
+
+.profile p {
+  margin-top: 20px;
+  color: var(--black);
+  font-size: 20px;
+}
+
+.profile p a {
+  color: var(--red);
+}
+
+.profile p a:hover {
+  text-decoration: underline;
+}
+
+.admin-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.admin-content h1 {
+  color: #333;
+}
+
+.admin-content div {
+  margin-bottom: 20px;
+}
+
+.admin-content h2 {
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Show program functions by default */
+.program-functions,
+.volunteer-functions,
+.documentation-functions {
+  display: flex;
+  opacity: 1;
+}
+
+/* Style for function buttons */
+.program-functions a,
+.volunteer-functions a,
+.documentation-functions a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Change button color on hover */
+.program-functions a:hover,
+.volunteer-functions a:hover,
+.documentation-functions a:hover {
+  background-color: #45a049;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green */
+}
+.user-management a {
+  text-decoration: none;
+  color: white;
+}

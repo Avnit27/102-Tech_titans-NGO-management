@@ -1,0 +1,26 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+img {
+  height: 800px;
+  width: 900px;
+  transform: rotateY(20deg);
+}
+.photo {
+  perspective: 200px;
+}
+.video1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
